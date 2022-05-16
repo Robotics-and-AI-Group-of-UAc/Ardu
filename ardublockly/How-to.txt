@@ -1,0 +1,44 @@
+Instruções -
+https://github.com/carlosperate/ardublockly/wiki/Building-Ardublockly
+
+Instalar python 2 e 3(2.7, 3.4)
+Instalar python-pip
+
+Instalar modulo waitress
+Instalar modulo bottle
+
+##------------------------------------##
+Construir a aplicação (necessita de net -> google closure)
+Depois de se fazer alguma alteração
+
+	python build.py
+
+Para disponibilizar na net não é necessário fazer mais nada
+##-------------------------------------##
+
+	pip install pyinstaller
+	pip install MkDocs
+
+Construir a aplicação python (pythonserver e executáveis) - usar python3
+Os executáveis são criados em função do SO
+
+	python package/build_pyinstaller.py
+
+Criar um release da aplicação
+
+	python package/pack_ardublockly.py
+
+Versão Desktop - Instalar Node
+
+	cd package\electron
+	npm install
+	npm run release
+
+####-------------------------------------####
+
+Ficheiros a editar para criação de blocos
+
+blockly/blocks/arduino
+blockly/generators/arduino
+ardublockly/ardublockly_toolbox.js
+ardublockly/msg/pt.js

@@ -1,0 +1,842 @@
+2019-01-26T19:17:48.859Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.2
+2019-01-26T19:17:48.862Z - info: [ArdublocklyElec] Ardublockly root dir: /home/franc/apps/ardublockly
+2019-01-26T19:17:48.862Z - info: [ArdublocklyElec] OS detected: linux
+2019-01-26T19:17:48.895Z - info: [ServerMgr] Command: /home/franc/apps/ardublockly/arduexec/server/start --findprojectroot --nobrowser
+2019-01-26T19:17:49.173Z - info: [ArdublocklySrv] Running Python 3.4.3 (64 bit) on Linux-4.19.14-1-MANJARO-x86_64-with-ManjaroLinux-18.0.2-Illyria
+
+
+======= Parsing Command line arguments =======
+
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+
+======= Resolving server and project paths =======
+
+Ardublockly root directory: /home/franc/apps/ardublockly
+Selected server root: /home/franc/apps/ardublockly
+
+
+======= Loading Settings =======
+
+Settings loaded from:
+	 /home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+Final settings loaded:
+	Compiler directory: /bin/arduino
+	Arduino Board Key: Uno
+	Arduino Board Value: arduino:avr:uno
+	Serial Port Value: /dev/ttyS0
+	Sketch Name: ArdublocklySketch
+	Sketch Directory: /home/franc/apps/ardublockly
+	Load IDE option: open
+
+Settings file saved to:
+	/home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+2019-01-26T19:17:49.185Z - info: [ArdublocklySrv] 
+
+======= Starting Server =======
+
+Setting HTTP Server Document Root to: 
+	/home/franc/apps/ardublockly
+
+
+2019-01-26T19:17:49.194Z - error: [ArdublocklySrv] Failed to execute script start
+Traceback (most recent call last):
+  File "start.py", line 176, in <module>
+    main()
+  File "start.py", line 172, in main
+    ardublocklyserver.server.start_server(server_root)
+  File "ardublocklyserver/server.py", line 29, in start_server
+    server = BaseHTTPServer.HTTPServer(server_address, BlocklyRequestHandler)
+  File "socketserver.py", line 430, in __init__
+  File "http/server.py", line 133, in server_bind
+  File "socketserver.py", line 444, in server_bind
+OSError: [Errno 98] Address already in use
+
+2019-01-26T19:17:49.199Z - info: [ArdublocklySrv] Process exited with code 255
+2019-01-26T19:51:43.664Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.2
+2019-01-26T19:51:43.665Z - info: [ArdublocklyElec] Ardublockly root dir: /home/franc/apps/ardublockly
+2019-01-26T19:51:43.665Z - info: [ArdublocklyElec] OS detected: linux
+2019-01-26T19:51:43.760Z - info: [ServerMgr] Command: /home/franc/apps/ardublockly/arduexec/server/start --findprojectroot --nobrowser
+2019-01-26T19:51:44.140Z - info: [ArdublocklySrv] Running Python 3.4.3 (64 bit) on Linux-4.19.16-1-MANJARO-x86_64-with-ManjaroLinux-18.0.2-Illyria
+
+
+======= Parsing Command line arguments =======
+
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+
+======= Resolving server and project paths =======
+
+Ardublockly root directory: /home/franc/apps/ardublockly
+Selected server root: /home/franc/apps/ardublockly
+
+
+======= Loading Settings =======
+
+Settings loaded from:
+	 /home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+Final settings loaded:
+	Compiler directory: /bin/arduino
+	Arduino Board Key: Uno
+	Arduino Board Value: arduino:avr:uno
+	Serial Port Value: /dev/ttyS0
+	Sketch Name: ArdublocklySketch
+	Sketch Directory: /home/franc/apps/ardublockly
+	Load IDE option: open
+
+Settings file saved to:
+	/home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+2019-01-26T19:52:06.163Z - error: [ArdublocklySrv] Picked up JAVA_TOOL_OPTIONS: 
+
+2019-01-26T19:52:06.718Z - error: [ArdublocklySrv] java.lang.UnsatisfiedLinkError: /usr/lib/jvm/java-8-openjdk/jre/lib/amd64/libsplashscreen.so: /home/franc/apps/ardublockly/arduexec/server/libz.so.1: version `ZLIB_1.2.9' not found (required by /usr/lib/jvm/java-8-openjdk/jre/lib/amd64/libsplashscreen.so)
+
+2019-01-26T19:52:06.718Z - error: [ArdublocklySrv] 	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1941)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1845)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at java.awt.SplashScreen$1.run(SplashScreen.java:124)
+	at java.awt.SplashScreen$1.run(SplashScreen.java:122)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.awt.SplashScreen.getSplashScreen(SplashScreen.java:121)
+
+2019-01-26T19:52:06.719Z - error: [ArdublocklySrv] 	at processing.app.Base.<init>(Base.java:236)
+	at processing.app.Base.main(Base.java:151)
+
+2019-01-26T19:53:09.170Z - error: [ArdublocklySrv] Picked up JAVA_TOOL_OPTIONS: 
+
+2019-01-26T19:53:09.491Z - error: [ArdublocklySrv] java.lang.UnsatisfiedLinkError: /usr/lib/jvm/java-8-openjdk/jre/lib/amd64/libsplashscreen.so: /home/franc/apps/ardublockly/arduexec/server/libz.so.1: version `ZLIB_1.2.9' not found (required by /usr/lib/jvm/java-8-openjdk/jre/lib/amd64/libsplashscreen.so)
+2019-01-26T19:53:09.492Z - error: [ArdublocklySrv] 
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(ClassLoader.java:1941)
+	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:1845)
+	at java.lang.Runtime.loadLibrary0(Runtime.java:870)
+	at java.lang.System.loadLibrary(System.java:1122)
+	at java.awt.SplashScreen$1.run(SplashScreen.java:124)
+	at java.awt.SplashScreen$1.run(SplashScreen.java:122)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.awt.SplashScreen.getSplashScreen(SplashScreen.java:121)
+	at processing.app.Base.<init>(Base.java:236)
+	at processing.app.Base.main(Base.java:151)
+
+2019-04-02T12:18:02.046Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.2
+2019-04-02T12:18:02.047Z - info: [ArdublocklyElec] Ardublockly root dir: /home/franc/apps/ardublockly
+2019-04-02T12:18:02.047Z - info: [ArdublocklyElec] OS detected: linux
+2019-04-02T12:18:02.145Z - info: [ServerMgr] Command: /home/franc/apps/ardublockly/arduexec/server/start --findprojectroot --nobrowser
+2019-04-02T12:18:02.529Z - info: [ArdublocklySrv] Running Python 3.4.3 (64 bit) on Linux-4.19.32-1-MANJARO-x86_64-with-ManjaroLinux-18.0.4-Illyria
+
+
+======= Parsing Command line arguments =======
+
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+
+======= Resolving server and project paths =======
+
+Ardublockly root directory: /home/franc/apps/ardublockly
+Selected server root: /home/franc/apps/ardublockly
+
+
+======= Loading Settings =======
+
+Settings loaded from:
+	 /home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+Final settings loaded:
+	Compiler directory: /bin/arduino
+	Arduino Board Key: Uno
+	Arduino Board Value: arduino:avr:uno
+	Serial Port Value: /dev/ttyS0
+	Sketch Name: ArdublocklySketch
+	Sketch Directory: /home/franc/apps/ardublockly
+	Load IDE option: open
+
+Settings file saved to:
+	/home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+2019-04-02T12:54:23.573Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.2
+2019-04-02T12:54:23.574Z - info: [ArdublocklyElec] Ardublockly root dir: /home/franc/apps/ardublockly
+2019-04-02T12:54:23.575Z - info: [ArdublocklyElec] OS detected: linux
+2019-04-02T12:54:23.610Z - info: [ServerMgr] Command: /home/franc/apps/ardublockly/arduexec/server/start --findprojectroot --nobrowser
+2019-04-02T12:54:23.801Z - info: [ArdublocklySrv] Running Python 3.4.3 (64 bit) on Linux-4.19.32-1-MANJARO-x86_64-with-ManjaroLinux-18.0.4-Illyria
+
+
+======= Parsing Command line arguments =======
+
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+
+======= Resolving server and project paths =======
+
+Ardublockly root directory: /home/franc/apps/ardublockly
+Selected server root: /home/franc/apps/ardublockly
+
+
+======= Loading Settings =======
+
+Settings loaded from:
+	 /home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+Final settings loaded:
+	Compiler directory: /bin/arduino
+	Arduino Board Key: Uno
+	Arduino Board Value: arduino:avr:uno
+	Serial Port Value: /dev/ttyS0
+	Sketch Name: ArdublocklySketch
+	Sketch Directory: /home/franc/apps/ardublockly
+	Load IDE option: open
+
+Settings file saved to:
+	/home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+2019-04-02T12:54:23.803Z - error: [ArdublocklySrv] Failed to execute script start
+
+2019-04-02T12:54:23.804Z - error: [ArdublocklySrv] Traceback (most recent call last):
+  File "start.py", line 176, in <module>
+    main()
+  File "start.py", line 172, in main
+    ardublocklyserver.server.start_server(server_root)
+  File "ardublocklyserver/server.py", line 29, in start_server
+    server = BaseHTTPServer.HTTPServer(server_address, BlocklyRequestHandler)
+  File "socketserver.py", line 430, in __init__
+  File "http/server.py", line 133, in server_bind
+  File "socketserver.py", line 444, in server_bind
+OSError: [Errno 98] Address already in use
+
+2019-04-02T12:54:23.804Z - info: [ArdublocklySrv] 
+
+======= Starting Server =======
+
+Setting HTTP Server Document Root to: 
+	/home/franc/apps/ardublockly
+
+
+2019-04-02T12:54:23.836Z - info: [ArdublocklySrv] Process exited with code 255
+2019-04-02T15:32:14.930Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.2
+2019-04-02T15:32:14.932Z - info: [ArdublocklyElec] Ardublockly root dir: /home/franc/apps/ardublockly
+2019-04-02T15:32:14.932Z - info: [ArdublocklyElec] OS detected: linux
+2019-04-02T15:32:14.974Z - info: [ServerMgr] Command: /home/franc/apps/ardublockly/arduexec/server/start --findprojectroot --nobrowser
+2019-04-02T15:32:15.189Z - info: [ArdublocklySrv] Running Python 3.4.3 (64 bit) on Linux-4.19.32-1-MANJARO-x86_64-with-ManjaroLinux-18.0.4-Illyria
+
+
+======= Parsing Command line arguments =======
+
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+
+======= Resolving server and project paths =======
+
+Ardublockly root directory: /home/franc/apps/ardublockly
+Selected server root: /home/franc/apps/ardublockly
+
+
+======= Loading Settings =======
+
+Settings loaded from:
+	 /home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+Final settings loaded:
+	Compiler directory: /bin/arduino
+	Arduino Board Key: Uno
+	Arduino Board Value: arduino:avr:uno
+	Serial Port Value: /dev/ttyS0
+	Sketch Name: ArdublocklySketch
+	Sketch Directory: /home/franc/apps/ardublockly
+	Load IDE option: open
+
+Settings file saved to:
+	/home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+2019-04-02T15:32:30.416Z - info: [ServerMgr] Server stopped.
+2019-04-02T15:53:15.323Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.2
+2019-04-02T15:53:15.324Z - info: [ArdublocklyElec] Ardublockly root dir: /home/franc/apps/ardublockly_old
+2019-04-02T15:53:15.324Z - info: [ArdublocklyElec] OS detected: linux
+2019-04-02T15:53:15.370Z - info: [ServerMgr] Command: /home/franc/apps/ardublockly_old/arduexec/server/start --findprojectroot --nobrowser
+2019-04-02T15:53:15.583Z - info: [ArdublocklySrv] Running Python 3.4.3 (64 bit) on Linux-4.19.32-1-MANJARO-x86_64-with-ManjaroLinux-18.0.4-Illyria
+
+
+======= Parsing Command line arguments =======
+
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+
+======= Resolving server and project paths =======
+
+Ardublockly root directory: /home/franc/apps/ardublockly_old
+Selected server root: /home/franc/apps/ardublockly_old
+
+
+======= Loading Settings =======
+
+Settings loaded from:
+	 /home/franc/apps/ardublockly_old/ServerCompilerSettings.ini
+
+Settings file sketch directory is not valid:
+	/home/franc/apps/ardublockly
+Default Sketch directory set:
+	/home/franc/apps/ardublockly_old
+
+Final settings loaded:
+	Compiler directory: /bin/arduino
+	Arduino Board Key: Uno
+	Arduino Board Value: arduino:avr:uno
+	Serial Port Value: /dev/ttyS0
+	Sketch Name: ArdublocklySketch
+	Sketch Directory: /home/franc/apps/ardublockly_old
+	Load IDE option: open
+
+Settings file saved to:
+	/home/franc/apps/ardublockly_old/ServerCompilerSettings.ini
+
+2019-04-02T15:53:15.586Z - info: [ArdublocklySrv] 
+
+======= Starting Server =======
+
+Setting HTTP Server Document Root to: 
+	/home/franc/apps/ardublockly_old
+
+
+2019-04-02T15:53:15.587Z - error: [ArdublocklySrv] Failed to execute script start
+Traceback (most recent call last):
+  File "start.py", line 176, in <module>
+    main()
+  File "start.py", line 172, in main
+    ardublocklyserver.server.start_server(server_root)
+  File "ardublocklyserver/server.py", line 29, in start_server
+    server = BaseHTTPServer.HTTPServer(server_address, BlocklyRequestHandler)
+  File "socketserver.py", line 430, in __init__
+  File "http/server.py", line 133, in server_bind
+  File "socketserver.py", line 444, in server_bind
+OSError: [Errno 98] Address already in use
+
+2019-04-02T15:53:15.618Z - info: [ArdublocklySrv] Process exited with code 255
+2019-04-02T16:31:35.705Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.2
+2019-04-02T16:31:35.707Z - info: [ArdublocklyElec] Ardublockly root dir: /home/franc/apps/ardublockly
+2019-04-02T16:31:35.707Z - info: [ArdublocklyElec] OS detected: linux
+2019-04-02T16:31:35.738Z - info: [ServerMgr] Command: /home/franc/apps/ardublockly/arduexec/server/start --findprojectroot --nobrowser
+2019-04-02T16:31:35.931Z - info: [ArdublocklySrv] Running Python 3.4.3 (64 bit) on Linux-4.19.32-1-MANJARO-x86_64-with-ManjaroLinux-18.0.4-Illyria
+
+
+======= Parsing Command line arguments =======
+
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+
+======= Resolving server and project paths =======
+
+Ardublockly root directory: /home/franc/apps/ardublockly
+Selected server root: /home/franc/apps/ardublockly
+
+
+======= Loading Settings =======
+
+Settings loaded from:
+	 /home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+Settings file sketch directory is not valid:
+	/home/franc/apps/ardublockly_old
+Default Sketch directory set:
+	/home/franc/apps/ardublockly
+
+Final settings loaded:
+	Compiler directory: /bin/arduino
+	Arduino Board Key: Uno
+	Arduino Board Value: arduino:avr:uno
+	Serial Port Value: /dev/ttyS0
+	Sketch Name: ArdublocklySketch
+	Sketch Directory: /home/franc/apps/ardublockly
+	Load IDE option: open
+
+Settings file saved to:
+	/home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+
+======= Starting Server =======
+
+Setting HTTP Server Document Root to: 
+	/home/franc/apps/ardublockly
+
+
+2019-04-02T16:31:35.933Z - error: [ArdublocklySrv] Failed to execute script start
+Traceback (most recent call last):
+  File "start.py", line 176, in <module>
+    main()
+  File "start.py", line 172, in main
+    ardublocklyserver.server.start_server(server_root)
+  File "ardublocklyserver/server.py", line 29, in start_server
+    server = BaseHTTPServer.HTTPServer(server_address, BlocklyRequestHandler)
+  File "socketserver.py", line 430, in __init__
+  File "http/server.py", line 133, in server_bind
+  File "socketserver.py", line 444, in server_bind
+OSError: [Errno 98] Address already in use
+
+2019-04-02T16:31:35.960Z - info: [ArdublocklySrv] Process exited with code 255
+2019-04-02T16:38:35.881Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.2
+2019-04-02T16:38:35.882Z - info: [ArdublocklyElec] Ardublockly root dir: /home/franc/apps/ardublockly
+2019-04-02T16:38:35.882Z - info: [ArdublocklyElec] OS detected: linux
+2019-04-02T16:38:35.912Z - info: [ServerMgr] Command: /home/franc/apps/ardublockly/arduexec/server/start --findprojectroot --nobrowser
+2019-04-02T16:38:36.102Z - info: [ArdublocklySrv] Running Python 3.4.3 (64 bit) on Linux-4.19.32-1-MANJARO-x86_64-with-ManjaroLinux-18.0.4-Illyria
+
+
+======= Parsing Command line arguments =======
+
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+
+======= Resolving server and project paths =======
+
+Ardublockly root directory: /home/franc/apps/ardublockly
+Selected server root: /home/franc/apps/ardublockly
+
+
+======= Loading Settings =======
+
+Settings loaded from:
+	 /home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+Final settings loaded:
+	Compiler directory: /bin/arduino
+	Arduino Board Key: Uno
+	Arduino Board Value: arduino:avr:uno
+	Serial Port Value: /dev/ttyS0
+	Sketch Name: ArdublocklySketch
+	Sketch Directory: /home/franc/apps/ardublockly
+	Load IDE option: open
+
+Settings file saved to:
+	/home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+
+======= Starting Server =======
+
+Setting HTTP Server Document Root to: 
+	/home/franc/apps/ardublockly
+
+
+2019-04-02T16:38:36.105Z - error: [ArdublocklySrv] Failed to execute script start
+Traceback (most recent call last):
+  File "start.py", line 176, in <module>
+    main()
+  File "start.py", line 172, in main
+    ardublocklyserver.server.start_server(server_root)
+  File "ardublocklyserver/server.py", line 29, in start_server
+    server = BaseHTTPServer.HTTPServer(server_address, BlocklyRequestHandler)
+  File "socketserver.py", line 430, in __init__
+  File "http/server.py", line 133, in server_bind
+  File "socketserver.py", line 444, in server_bind
+OSError: [Errno 98] Address already in use
+
+2019-04-02T16:38:36.133Z - info: [ArdublocklySrv] Process exited with code 255
+2019-04-02T17:47:58.872Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.2
+2019-04-02T17:47:58.873Z - info: [ArdublocklyElec] Ardublockly root dir: /home/franc/apps/ardublockly
+2019-04-02T17:47:58.873Z - info: [ArdublocklyElec] OS detected: linux
+2019-04-02T17:47:58.899Z - info: [ServerMgr] Command: /home/franc/apps/ardublockly/arduexec/server/start --findprojectroot --nobrowser
+2019-04-02T17:47:59.118Z - info: [ArdublocklySrv] Running Python 3.4.3 (64 bit) on Linux-4.19.32-1-MANJARO-x86_64-with-ManjaroLinux-18.0.4-Illyria
+
+
+======= Parsing Command line arguments =======
+
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+
+======= Resolving server and project paths =======
+
+Ardublockly root directory: /home/franc/apps/ardublockly
+Selected server root: /home/franc/apps/ardublockly
+
+
+======= Loading Settings =======
+
+Settings loaded from:
+	 /home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+Final settings loaded:
+	Compiler directory: /bin/arduino
+	Arduino Board Key: Uno
+	Arduino Board Value: arduino:avr:uno
+	Serial Port Value: /dev/ttyS0
+	Sketch Name: ArdublocklySketch
+	Sketch Directory: /home/franc/apps/ardublockly
+	Load IDE option: open
+
+Settings file saved to:
+	/home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+
+======= Starting Server =======
+
+Setting HTTP Server Document Root to: 
+	/home/franc/apps/ardublockly
+
+
+2019-04-02T17:47:59.120Z - error: [ArdublocklySrv] Failed to execute script start
+Traceback (most recent call last):
+  File "start.py", line 176, in <module>
+    main()
+  File "start.py", line 172, in main
+    ardublocklyserver.server.start_server(server_root)
+  File "ardublocklyserver/server.py", line 29, in start_server
+    server = BaseHTTPServer.HTTPServer(server_address, BlocklyRequestHandler)
+  File "socketserver.py", line 430, in __init__
+  File "http/server.py", line 133, in server_bind
+  File "socketserver.py", line 444, in server_bind
+OSError: [Errno 98] Address already in use
+
+2019-04-02T17:47:59.151Z - info: [ArdublocklySrv] Process exited with code 255
+2019-04-02T17:51:15.356Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.2
+2019-04-02T17:51:15.357Z - info: [ArdublocklyElec] Ardublockly root dir: /home/franc/apps/ardublockly
+2019-04-02T17:51:15.357Z - info: [ArdublocklyElec] OS detected: linux
+2019-04-02T17:51:15.393Z - info: [ServerMgr] Command: /home/franc/apps/ardublockly/arduexec/server/start --findprojectroot --nobrowser
+2019-04-02T17:51:15.614Z - info: [ArdublocklySrv] Running Python 3.4.3 (64 bit) on Linux-4.19.32-1-MANJARO-x86_64-with-ManjaroLinux-18.0.4-Illyria
+
+
+======= Parsing Command line arguments =======
+
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+
+======= Resolving server and project paths =======
+
+Ardublockly root directory: /home/franc/apps/ardublockly
+Selected server root: /home/franc/apps/ardublockly
+
+
+======= Loading Settings =======
+
+Settings loaded from:
+	 /home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+Final settings loaded:
+	Compiler directory: /bin/arduino
+	Arduino Board Key: Uno
+	Arduino Board Value: arduino:avr:uno
+	Serial Port Value: /dev/ttyS0
+	Sketch Name: ArdublocklySketch
+	Sketch Directory: /home/franc/apps/ardublockly
+	Load IDE option: open
+
+Settings file saved to:
+	/home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+2019-04-02T17:51:15.617Z - error: [ArdublocklySrv] Failed to execute script start
+Traceback (most recent call last):
+  File "start.py", line 176, in <module>
+    main()
+  File "start.py", line 172, in main
+    ardublocklyserver.server.start_server(server_root)
+  File "ardublocklyserver/server.py", line 29, in start_server
+    server = BaseHTTPServer.HTTPServer(server_address, BlocklyRequestHandler)
+  File "socketserver.py", line 430, in __init__
+  File "http/server.py", line 133, in server_bind
+  File "socketserver.py", line 444, in server_bind
+OSError: [Errno 98] Address already in use
+
+2019-04-02T17:51:15.617Z - info: [ArdublocklySrv] 
+
+======= Starting Server =======
+
+Setting HTTP Server Document Root to: 
+	/home/franc/apps/ardublockly
+
+
+2019-04-02T17:51:15.653Z - info: [ArdublocklySrv] Process exited with code 255
+2019-04-03T10:05:58.976Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.2
+2019-04-03T10:05:58.978Z - info: [ArdublocklyElec] Ardublockly root dir: /home/franc/apps/ardublockly
+2019-04-03T10:05:58.978Z - info: [ArdublocklyElec] OS detected: linux
+2019-04-03T10:05:59.152Z - info: [ServerMgr] Command: /home/franc/apps/ardublockly/arduexec/server/start --findprojectroot --nobrowser
+2019-04-03T10:06:00.385Z - info: [ArdublocklySrv] Running Python 3.4.3 (64 bit) on Linux-4.19.32-1-MANJARO-x86_64-with-ManjaroLinux-18.0.4-Illyria
+
+
+======= Parsing Command line arguments =======
+
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+
+======= Resolving server and project paths =======
+
+Ardublockly root directory: /home/franc/apps/ardublockly
+Selected server root: /home/franc/apps/ardublockly
+
+
+======= Loading Settings =======
+
+Settings loaded from:
+	 /home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+Final settings loaded:
+	Compiler directory: /bin/arduino
+	Arduino Board Key: Uno
+	Arduino Board Value: arduino:avr:uno
+	Serial Port Value: /dev/ttyS0
+	Sketch Name: ArdublocklySketch
+	Sketch Directory: /home/franc/apps/ardublockly
+	Load IDE option: open
+
+Settings file saved to:
+	/home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+2019-04-03T10:06:00.388Z - error: [ArdublocklySrv] Failed to execute script start
+
+2019-04-03T10:06:00.388Z - error: [ArdublocklySrv] Traceback (most recent call last):
+  File "start.py", line 176, in <module>
+    main()
+  File "start.py", line 172, in main
+    ardublocklyserver.server.start_server(server_root)
+  File "ardublocklyserver/server.py", line 29, in start_server
+    server = BaseHTTPServer.HTTPServer(server_address, BlocklyRequestHandler)
+  File "socketserver.py", line 430, in __init__
+  File "http/server.py", line 133, in server_bind
+  File "socketserver.py", line 444, in server_bind
+OSError: [Errno 98] Address already in use
+
+2019-04-03T10:06:00.388Z - info: [ArdublocklySrv] 
+
+======= Starting Server =======
+
+Setting HTTP Server Document Root to: 
+	/home/franc/apps/ardublockly
+
+
+2019-04-03T10:06:00.429Z - info: [ArdublocklySrv] Process exited with code 255
+2019-04-18T12:03:58.530Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.2
+2019-04-18T12:03:58.531Z - info: [ArdublocklyElec] Ardublockly root dir: /home/franc/apps/ardublockly
+2019-04-18T12:03:58.531Z - info: [ArdublocklyElec] OS detected: linux
+2019-04-18T12:03:59.111Z - info: [ServerMgr] Command: /home/franc/apps/ardublockly/arduexec/server/start --findprojectroot --nobrowser
+2019-04-18T12:03:59.450Z - info: [ArdublocklySrv] Running Python 3.7.3 (64 bit) on Linux-4.19.32-1-MANJARO-x86_64-with-arch-Manjaro-Linux
+
+
+======= Parsing Command line arguments =======
+
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+
+======= Resolving server and project paths =======
+
+Ardublockly root directory: /home/franc/apps/ardublockly
+Selected server root: /home/franc/apps/ardublockly
+
+
+======= Loading Settings =======
+
+Settings loaded from:
+	 /home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+Final settings loaded:
+	Compiler directory: /bin/arduino
+	Arduino Board Key: Uno
+	Arduino Board Value: arduino:avr:uno
+	Serial Port Value: /dev/ttyS0
+	Sketch Name: ArdublocklySketch
+	Sketch Directory: /home/franc/apps/ardublockly
+	Load IDE option: open
+
+Settings file saved to:
+	/home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+2019-04-18T12:04:15.014Z - info: [ServerMgr] Server stopped.
+2019-04-18T12:04:15.020Z - info: [ArdublocklySrv] Process exited with code null
+2019-04-18T12:09:13.223Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.2
+2019-04-18T12:09:13.225Z - info: [ArdublocklyElec] Ardublockly root dir: /home/franc/apps/ardublockly
+2019-04-18T12:09:13.225Z - info: [ArdublocklyElec] OS detected: linux
+2019-04-18T12:09:13.256Z - info: [ServerMgr] Command: /home/franc/apps/ardublockly/arduexec/server/start --findprojectroot --nobrowser
+2019-04-18T12:09:13.429Z - info: [ArdublocklySrv] Running Python 3.7.3 (64 bit) on Linux-4.19.32-1-MANJARO-x86_64-with-arch-Manjaro-Linux
+
+
+======= Parsing Command line arguments =======
+
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+
+======= Resolving server and project paths =======
+
+Ardublockly root directory: /home/franc/apps/ardublockly
+Selected server root: /home/franc/apps/ardublockly
+
+
+======= Loading Settings =======
+
+Settings loaded from:
+	 /home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+Final settings loaded:
+	Compiler directory: /bin/arduino
+	Arduino Board Key: Uno
+	Arduino Board Value: arduino:avr:uno
+	Serial Port Value: /dev/ttyS0
+	Sketch Name: ArdublocklySketch
+	Sketch Directory: /home/franc/apps/ardublockly
+	Load IDE option: open
+
+Settings file saved to:
+	/home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+2019-04-18T12:09:19.546Z - info: [ServerMgr] Server stopped.
+2019-04-18T12:09:19.554Z - info: [ArdublocklySrv] Process exited with code null
+2019-04-18T13:47:24.449Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.2
+2019-04-18T13:47:24.450Z - info: [ArdublocklyElec] Ardublockly root dir: /home/franc/apps/ardublockly
+2019-04-18T13:47:24.450Z - info: [ArdublocklyElec] OS detected: linux
+2019-04-18T13:47:24.483Z - info: [ServerMgr] Command: /home/franc/apps/ardublockly/arduexec/server/start --findprojectroot --nobrowser
+2019-04-18T13:47:24.621Z - info: [ArdublocklySrv] Running Python 3.7.3 (64 bit) on Linux-4.19.32-1-MANJARO-x86_64-with-arch-Manjaro-Linux
+
+
+======= Parsing Command line arguments =======
+
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+
+======= Resolving server and project paths =======
+
+Ardublockly root directory: /home/franc/apps/ardublockly
+Selected server root: /home/franc/apps/ardublockly
+
+
+======= Loading Settings =======
+
+Settings loaded from:
+	 /home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+Final settings loaded:
+	Compiler directory: /bin/arduino
+	Arduino Board Key: Uno
+	Arduino Board Value: arduino:avr:uno
+	Serial Port Value: /dev/ttyS0
+	Sketch Name: ArdublocklySketch
+	Sketch Directory: /home/franc/apps/ardublockly
+	Load IDE option: open
+
+Settings file saved to:
+	/home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+2019-04-18T13:47:24.622Z - info: [ArdublocklySrv] 
+
+======= Starting Server =======
+
+Setting HTTP Server Document Root to: 
+	/home/franc/apps/ardublockly
+
+
+2019-04-18T13:47:24.623Z - error: [ArdublocklySrv] [20900] Failed to execute script start
+Traceback (most recent call last):
+  File "start.py", line 176, in <module>
+    main()
+  File "start.py", line 172, in main
+    ardublocklyserver.server.start_server(server_root)
+  File "ardublocklyserver/server.py", line 29, in start_server
+    server = BaseHTTPServer.HTTPServer(server_address, BlocklyRequestHandler)
+  File "socketserver.py", line 452, in __init__
+  File "http/server.py", line 137, in server_bind
+  File "socketserver.py", line 466, in server_bind
+OSError: [Errno 98] Address already in use
+
+2019-04-18T13:47:24.713Z - info: [ArdublocklySrv] Process exited with code 255
+2019-04-18T13:47:39.902Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.2
+2019-04-18T13:47:39.903Z - info: [ArdublocklyElec] Ardublockly root dir: /home/franc/apps/ardublockly
+2019-04-18T13:47:39.903Z - info: [ArdublocklyElec] OS detected: linux
+2019-04-18T13:47:39.926Z - info: [ServerMgr] Command: /home/franc/apps/ardublockly/arduexec/server/start --findprojectroot --nobrowser
+2019-04-18T13:47:40.247Z - info: [ArdublocklySrv] Running Python 3.7.3 (64 bit) on Linux-4.19.32-1-MANJARO-x86_64-with-arch-Manjaro-Linux
+
+
+======= Parsing Command line arguments =======
+
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+
+======= Resolving server and project paths =======
+
+Ardublockly root directory: /home/franc/apps/ardublockly
+Selected server root: /home/franc/apps/ardublockly
+
+
+======= Loading Settings =======
+
+Settings loaded from:
+	 /home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+Final settings loaded:
+	Compiler directory: /bin/arduino
+	Arduino Board Key: Uno
+	Arduino Board Value: arduino:avr:uno
+	Serial Port Value: /dev/ttyS0
+	Sketch Name: ArdublocklySketch
+	Sketch Directory: /home/franc/apps/ardublockly
+	Load IDE option: open
+
+Settings file saved to:
+	/home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+
+======= Starting Server =======
+
+Setting HTTP Server Document Root to: 
+	/home/franc/apps/ardublockly
+
+
+2019-04-18T13:47:40.250Z - error: [ArdublocklySrv] [20986] Failed to execute script start
+Traceback (most recent call last):
+  File "start.py", line 176, in <module>
+    main()
+  File "start.py", line 172, in main
+    ardublocklyserver.server.start_server(server_root)
+  File "ardublocklyserver/server.py", line 29, in start_server
+    server = BaseHTTPServer.HTTPServer(server_address, BlocklyRequestHandler)
+  File "socketserver.py", line 452, in __init__
+  File "http/server.py", line 137, in server_bind
+  File "socketserver.py", line 466, in server_bind
+OSError: [Errno 98] Address already in use
+
+2019-04-18T13:47:40.252Z - info: [ArdublocklySrv] Process exited with code 255
+2019-05-12T18:08:43.793Z - info: [ArdublocklyElec] Starting Ardublockly version: 0.1.2
+2019-05-12T18:08:43.795Z - info: [ArdublocklyElec] Ardublockly root dir: /home/franc/apps/ardublockly
+2019-05-12T18:08:43.795Z - info: [ArdublocklyElec] OS detected: linux
+2019-05-12T18:08:43.847Z - info: [ServerMgr] Command: /home/franc/apps/ardublockly/arduexec/server/start --findprojectroot --nobrowser
+2019-05-12T18:08:44.041Z - info: [ArdublocklySrv] Running Python 3.7.3 (64 bit) on Linux-4.19.36-1-MANJARO-x86_64-with-arch-Manjaro-Linux
+
+
+======= Parsing Command line arguments =======
+
+Parsed "--findprojectroot" flag. The ardublockly project root will be set as the server root directory.
+Parsed "--nobrowser" flag. No browser will be opened.
+
+
+======= Resolving server and project paths =======
+
+Ardublockly root directory: /home/franc/apps/ardublockly
+Selected server root: /home/franc/apps/ardublockly
+
+
+======= Loading Settings =======
+
+Settings loaded from:
+	 /home/franc/apps/ardublockly/ServerCompilerSettings.ini
+
+Final settings loaded:
+	Compiler directory: /bin/arduino
+	Arduino Board Key: Uno
+	Arduino Board Value: arduino:avr:uno
+	Serial Port Value: /dev/ttyS0
+	Sketch Name: ArdublocklySketch
+	Sketch Directory: /home/franc/apps/ardublockly
+	Load IDE option: open
+
+Settings file saved to:
+	/home/franc/apps/ardublockly/ServerCompilerSettings.ini
+

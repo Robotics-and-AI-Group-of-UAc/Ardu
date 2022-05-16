@@ -1,0 +1,13 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_if" id="IYI^];@w6D*x/jR,O`_;" x="264" y="17">
+    <statement name="DO0">
+      <block type="controls_repeat_ext" id="*@F~+)ktx%pn.8Zb]+w.">
+        <value name="TIMES">
+          <block type="math_number" id="~)Q7hMb[@6V3J^Rp[z#7">
+            <field name="NUM">10</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+</xml>
